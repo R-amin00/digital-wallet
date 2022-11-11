@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    padding: 100px;
+}
+
+.submit-area {
+    margin: 20px auto;
+    width: 60%;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.primary-area {
+    margin: auto;
+}
+
+
+.parent {
+    display:flex;
+    justify-content: space-around;
+}
+
+.choice {
+    width: 300px;
+    height: 350px;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    color: white;
+}
+
+.heading-text {
+    text-align: center;
+    margin-top: 25px;
+}
+.danger {
+    position: relative;
+    background-color: slateblue;
+}
+
+.primary {
+    position: relative;
+    background-color: lightsalmon;
+}
+
+.button {
+    position: absolute;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: lightgreen;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -30%);
+}
+
+.btn-primary:hover {
+    background: slateblue;
+    border: 2px solid lightgreen;
+}
+.btn-secondary:hover {
+    background: lightsalmon;
+    border: 2px solid lightgreen;
+}
+
+.register-area {
+    margin: 80px auto;
+    /* background-color: #00bbf0; */
+    box-shadow: 5px 5px 10px gray;
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    color: grey;
+}
+
+.register {
+    display: none;
+}
+
+.pair-input {
+    margin-bottom: 10px;
+}
+
+.status {
+    margin: 0 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.deposit {
+    background-color: slateblue;
+}
+
+.withdraw {
+    background-color: lightsalmon;
+}
+
+.balance {
+    background-color: orange;
+}
+
+.transactionArea {
+    display: none;
+}

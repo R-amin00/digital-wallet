@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <title>Virtual Parse</title>
+    </head>
+    <body>
+        <div>
+            <div id="grandparentMain">
+                <h1 class="text-center">Welcome to Digital Wallet</h1>
+                <div id="parent" class="parent">
+                    <div class="choice danger">
+                        <h3 class="heading-text">Hey there!</h3>
+                        <h5 class="heading-text">I think you have an account</h5>
+                        <h6 class="heading-text">If have, please sign in!</h6>
+                        <button id="signIn" class="button btn-primary">Sign in</button>
+                    </div>
+                    <div class="choice primary">
+                        <h3 class="heading-text">Hey there!</h3>
+                        <h5 class="heading-text">Do you have any account?</h5>
+                        <h6 class="heading-text">If not, please sign up!</h6>
+                        <button id="signUp" class="button btn-secondary">Sign up</button>
+                    </div>
+                </div>
+            </div>
+            <div id="grandparent" class="hidden">
+                <h1 class="text-center">Welcome to Digital Wallet</h1>
+                <div id="login-area"  class="submit-area">
+                    <h4>Login</h4>
+                    <input type="text" name="Gmail/Phone" class="form-control" placeholder="Email or Phone"><br>
+                    <input type="password" name="" class="form-control" placeholder="Password"><br>
+                    <button class="btn btn-success" id="login-button">Enter</button>
+                </div>
+            </div>
+
+            <div id="grandparent-register" class="register">
+                <h1 class="text-center">Welcome to Digital Wallet</h1>
+                <div id="signup-area" class="register-area">
+                    <h1>Sign up</h1>
+                        <div class="pair-input">
+                            <h6>First name</h6>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="pair-input">
+                            <h6>Last name</h6>
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                        <div class="pair-input">
+                            <h6>Email</h6>
+                            <input type="text" class="form-control" placeholder="Email name">
+                        </div>
+                        <div class="pair-input">
+                            <h6>Phone number</h6>
+                            <input type="text" class="form-control" placeholder="Phone name">
+                        </div>
+                        <div class="pair-input">
+                            <h6>Password</h6>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="pair-input">
+                            <h6>Confirm password</h6>
+                            <input type="password" class="form-control" placeholder="Confirm password">
+                        </div><br>
+                        <button class="btn btn-danger" id="registerButton">Sign up</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="transaction-area" class="transactionArea">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit status">
+                        <h5>Deposit</h5>
+                        <p>$ <span id="deposit-money">00</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                        <p>$ <span id="balance-money">00</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <p>$ <span id="withdraw-money">00</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Deposit</h4><br>
+                        <input type="text" id="inputDeposit" class="form-control" placeholder="$ How much you want to Deposit!"><br>
+                        <button id="addDeposit" class="btn btn-success">Enter</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>withdraw</h4><br>
+                        <input type="text" id="inputWithdraw" class="form-control" placeholder="$ How much you want to Withdraw!"><br>
+                        <button id="addWithdraw" class="btn btn-success">Enter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Deposit</h4>
+                        <input type="text" id="depositAmount" class="form-control" placeholder="$ amount you want to deposit"><br>
+                        <button id="addDeposit" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h4>Withdraw</h4>
+                        <input type="text" id="withdrawAmount" class="form-control" placeholder="$ amount you want to withdraw"><br>
+                        <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+        <script src="./script.js"></script>
+    </body>
+</html>
